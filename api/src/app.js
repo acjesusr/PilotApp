@@ -17,9 +17,13 @@ app.use(cors());
 
 // app.use('/v1', api);
 
-app.get('/test', function (req, res) {
+const eventRouter = require('./routes/events');
+
+app.use('/events', eventRouter);
+
+/*app.get('/test', function (req, res) {
   res.json("Hello");
-});
+});*/
 
 app.use((req, res, next) => {
   res.status(404);

@@ -17,6 +17,14 @@ RUN npm install react-qr-reader
 #QR code generator for react
 RUN npm install react-qr-svg
 
+#Date-picker for forms
+RUN npm install react-datepicker
+
+#Switch button for react
+RUN npm install react-switch
+
+#RUN npm install axios
+
 #################
 RUN npm install @material-ui/core
 

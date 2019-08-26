@@ -7,3 +7,5 @@ const eventSchema = new Schema({
     attendance: [{ email: String, name: String }],
     date: { type: Date, default: Date.now }
   });
+const Event = mongoose.model('Event', eventSchema);
+module.exports = Event;
