@@ -37,14 +37,13 @@ class QrRegister extends Component {
     turn: null,
   };
   
-  handleScan = id => {
-    if (id) {
+  handleScan = (data) => {
+    if (data) {
       try {
-        const res = id;
-        console.log(res.data);
+        console.log(data);
         this.setState({
           openSnackbar: true,
-          turn: res.data,
+          turn: data,
         });
       } catch(e) {
         console.log(e);

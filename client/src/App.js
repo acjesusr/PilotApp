@@ -48,12 +48,6 @@ function App() {
               style={{ width: 256 }}
               value="All hope abandon, ye who enter here."
           />
-          {/*<QrCodeScanner
-            onQrCodeScanned={handleScanResult}
-            width={window.innerWidth}
-            height={window.innerHeight}
-            showAimAssist={false} // Defaults to true, disable to remove the aim assist
-          />*/}
           <QrRegister/>
       </div>
       
