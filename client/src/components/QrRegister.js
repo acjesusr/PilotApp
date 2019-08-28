@@ -8,32 +8,21 @@ import PropTypes from 'prop-types';
 import QrReader from "react-qr-reader";
 
 const styles = theme => ({
-  /*root: {
-    marginTop: '64px',
-  },
   content: {
+    marginTop: '64px',
     display: 'flex',
     flexDirection: 'row',
   },
-  card: {
-    flex: '1 1 50%',
-    marginLeft: '16px',
-    backgroundColor: theme.palette.background.paper,
-  },*/
   cameraDiv: {
     flex: '1 1 50%',
     maxWidth: '50%',
     maxHeight: '120px',
   },
-  /*section2: {
-    margin: theme.spacing.unit * 2,
-  },*/
 });
 
 class QrRegister extends Component {
   state = {
     delay: 1000,
-    openSnackbar: false,
     turn: null,
   };
   

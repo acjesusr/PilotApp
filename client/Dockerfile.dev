@@ -26,6 +26,10 @@ RUN npm install react-switch
 #RUN npm install axios
 
 #################
+RUN npm install bootstrap
+
+RUN npm install react-router-dom
+
 RUN npm install @material-ui/core
 
 RUN npm install react-redux
