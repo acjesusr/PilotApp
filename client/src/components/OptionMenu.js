@@ -49,7 +49,7 @@ export default function OptionMenu() {
         }}
       >
         {options.map(option => (
-          <Link to={`/${option}`}><MenuItem key={option} selected={option === 'QR'} onClick={handleClose}>
+          <Link to={`/${option}`}><MenuItem key={option} onClick={handleClose}>
             {option}
           </MenuItem></Link>
         ))}

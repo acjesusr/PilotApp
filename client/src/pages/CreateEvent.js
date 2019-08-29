@@ -9,7 +9,7 @@ class CreateEvent extends Component {
         this.onSubmit = this.onSubmit.bind(this);
         this.onChangeName = this.onChangeName.bind(this);
         this.onChangeDate = this.onChangeDate.bind(this);
-
+        this.onDescription = this.onDescription.bind(this);
         this.state = {
             name: '',
             descripton: '',
