@@ -36,6 +36,10 @@ RUN npm install @material-ui/icons
 
 RUN npm install react-redux
 
+RUN npm install redux
+
+RUN npm install redux-thunk
+
 RUN npm install prop-types
 ##################
 
