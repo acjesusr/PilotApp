@@ -6,21 +6,15 @@ import MoreVertIcon from '@material-ui/icons/MoreVert';
 import {Link} from "react-router-dom";
 
 const options = [
-  'View Events',
-  'Create Event',
-  'QR',
-  //'Scan QR',
+  'Edit Event',
+  'Check for attendance',
 ];
 const routes = str =>{
   switch (str) {
-    case 'QR':
-      return '/qr';
-    case 'Create Event':
+    case 'Edit Event':
       return '/createevent';
-    case 'View Events':
-      return '/eventlist';
-    /*case 'Scan QR':
-      return '/scanqr';*/
+    case 'Check for attendance':
+      return '/scanqr';
     default:
       return '/';
   }
@@ -28,7 +22,7 @@ const routes = str =>{
 
 const ITEM_HEIGHT = 48;
 
-export default function OptionMenu() {
+export default function EventOption() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
 
