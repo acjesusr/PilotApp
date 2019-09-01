@@ -26,7 +26,7 @@ const attendance = [
 export default function ViewEvent() {
     return(
         <div>
-            <EventCard event="Event Name" date="September 14, 2016" description="desc." attendance={attendance}/>
+            <EventCard id="1" event="Event Name" date="September 14, 2016" description="desc." attendance={attendance}/>
             {/*<EventCard/>
             <EventCard/>*/}
         </div>

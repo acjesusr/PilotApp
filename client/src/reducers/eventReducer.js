@@ -12,6 +12,7 @@ export default function(state = initialState, action) {
         events: action.payload
       };
     case SELECTED_EVENT:
+      
       return {
         ...state,
         event: action.payload

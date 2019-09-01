@@ -41,14 +41,18 @@ export default function EventCard(props) {
   const [expanded, setExpanded] = React.useState(false);
 
   function handleExpandClick() {
-    setExpanded(!expanded);
+    if (expanded && true) {
+      setExpanded(!expanded);
+    }else{
+      setExpanded(!expanded);
+    }
   }
 
   return (
     <Card className={classes.card}>
       <CardHeader
         action={
-          <EventOption/>
+          <EventOption id ={props.id}/>
         }
         title={props.event}
         subheader={props.date}

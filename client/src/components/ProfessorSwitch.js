@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import Switch from "react-switch";
  
 export default class ProfessorSwitch extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = { checked: false };
     this.handleChange = this.handleChange.bind(this);
   }

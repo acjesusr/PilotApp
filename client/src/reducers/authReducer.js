@@ -1,8 +1,9 @@
 import { FECTH_USER, SAVE_USER } from '../actions/types';
 const initialState = {
-  email: "",
-  name: "",
-  lastName: ""
+    id:"",
+    email: "",
+    name: "",
+    lastName: "",
 };
 
 export default function(state = initialState, action) {
